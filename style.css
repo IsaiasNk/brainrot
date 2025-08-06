@@ -72,33 +72,6 @@ main {
   border-radius: 10px;
 }
 
-/*----h1 del home----*/
-
-.contenedor {
-  text-align: center;
-}
-
-.contenedor img {
-  display: inline-block;
-}
-
-
-.texto {
-  max-width: 600px; /* Limita el ancho del texto */
-}
-
-.texto h1 {
-  padding-left: 60px;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.texto p {
-  padding-left: 40px;
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
 /*Personajes*/
 
 .contenedor-tarjetas {
