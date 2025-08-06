@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ddcd83;
+  color: rgb(8, 5, 5);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: #cfcf41;
+  padding: 20px 0;
+  box-shadow: 0 8px 20px rgba(229, 158, 27, 0.5);
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+nav a {
+  text-decoration: none; /* saca el subrayado */
+  color: inherit; /* hereda el color del contenedor */
+}
+
+
+.nav-item:hover {
+  transform: translateY(-5px);
+  color: #714d08;
+}
+
+.nav-item:hover i {
+  color: #b46a03;
+}
+
+main {
+  padding-top: 100px;
+}
+
+/*----Imagen de Tung tung sahur----*/
+
+main {
+  padding-top: 100px; /* para que no tape la navbar */
+}
+
+/* Contenedor para alinear la imagen a la derecha */
+.imagen-derecha {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px; /* separación del borde derecho */
+  padding-top: 20px;
+}
+
+/* Imagen con tamaño y margen opcional */
+.imagen-derecha img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*----h1 del home----*/
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+}
+
+.texto {
+  max-width: 600px; /* Limita el ancho del texto */
+}
+
+.texto h1 {
+  padding-left: 60px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  padding-left: 40px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/*Personajes*/
+
+.contenedor-tarjetas {
+  display: flex;
+  gap: 20px;                  /* Espacio entre las tarjetas */
+  justify-content: center;   /* Centrado horizontal */
+  padding: 30px;             /* Espacio interno para que no toque los bordes */
+  flex-wrap: wrap;           /* Que pasen abajo si no entran */
+}
+
+
+.card {
+  max-width: 300px;         /* Limita el ancho de la tarjeta */
+  width: 100%;              /* Para que se adapte a pantallas pequeñas */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: rgb(216, 189, 54);
+  cursor: pointer;
+}
+
+
+.card:hover {
+  transform: scale(1.03); /* Zoom suave */
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  margin: 0;
+  color: #333;
+}
+
+/*media*/
+
+/* Para tablets (ancho menor a 900px) */
+@media (max-width: 900px) {
+  nav {
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+}
+
+/* Para celulares (ancho menor a 600px) */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .nav-item i {
+    font-size: 20px;
+  }
+}
+
+
+
+
+.texto-info h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.texto-info p {
+  padding-left: 40px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
