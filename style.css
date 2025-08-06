@@ -74,13 +74,14 @@ main {
 
 /*----h1 del home----*/
 
-.contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px;
-  gap: 40px;
+.contenedor {
+  text-align: center;
 }
+
+.contenedor img {
+  display: inline-block;
+}
+
 
 .texto {
   max-width: 600px; /* Limita el ancho del texto */
