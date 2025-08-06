@@ -61,7 +61,7 @@ main {
 .imagen-derecha {
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px; /* separación del borde derecho */
+  padding-right: 100px; /* separación del borde derecho */
   padding-top: 20px;
 }
 
