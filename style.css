@@ -174,10 +174,6 @@ main {
   gap: 20px;
 }
 
-.texto-info {
-  max-width: 90%;
-}
-
 .imagen-derecha img {
   max-width: 90%;
   height: auto;
@@ -185,9 +181,20 @@ main {
   margin: 0 auto;
 }
 
-/*Botón*/
+/*nav en bootstrap*/
 
-.boton {
-  padding-left: 50%;
-  
+/* Colores y borde inferior */
+.custom-navbar {
+  background-color: #d5d54b; /* Amarillo */
+  border-bottom: 5px solid #e0be59; /* Borde dorado */
+}
+
+/* Texto negro */
+.custom-navbar .nav-link {
+  color: black !important;
+}
+
+/* Hover un poco más oscuro */
+.custom-navbar .nav-link:hover {
+  color: #333 !important;
 }

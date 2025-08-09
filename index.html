@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brainrot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/mateoo.webp">
     <meta name="description" content="Bienvenido a mi sitio web sobre brainrots">
@@ -12,20 +13,28 @@
   <body>
 
 <header>
-     <nav>
-  <a href="#" class="nav-item">
-    <i class="fas fa-home"></i>
-    <span>Home</span>
-  </a>
-  <a href="./pages/info.html" class="nav-item">
-    <i class="fas fa-info-circle"></i>
-    <span>Información</span>
-  </a>
-  <a href="./pages/personajes.html" class="nav-item">
-    <i class="fas fa-brain"></i>
-    <span>Brainrots</span>
-  </a>
+ <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/info.html">Información</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/personajes.html">Brainrots</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+
 </header>
     
 <main>
@@ -41,10 +50,6 @@
       <img src="./images/sahur.jpg" alt="Brainrots">
     </div>
   </div>
-
-  <div class="boton">
-    <button> Hola</button>
-  </div>
 </main>
 
 
@@ -53,6 +58,6 @@
 </footer>
 
     
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
