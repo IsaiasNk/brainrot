@@ -130,6 +130,8 @@ main {
   .nav-item {
     font-size: 14px;
   }
+
+  
 }
 
 /* Para celulares (ancho menor a 600px) */
@@ -147,6 +149,10 @@ main {
 
   .nav-item i {
     font-size: 20px;
+  }
+
+  .imagen-derecha {
+    padding-left: 100%;
   }
 }
 
@@ -173,9 +179,14 @@ main {
 
 /* Imagen */
 .imagen-derecha img {
-  width: 100%;
-  max-width: 300px;
+  padding-right: 25%;
+  max-width: 350px;
   margin-top: 20px;
-  height: auto;
 }
 
+/*Botón*/
+
+.boton {
+  padding-left: 50%;
+  
+}
