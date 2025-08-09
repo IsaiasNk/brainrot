@@ -131,6 +131,10 @@ main {
     font-size: 14px;
   }
 
+  .imagen-derecha {
+    padding-right: 40%;
+  }
+
   
 }
 
