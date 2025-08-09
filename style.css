@@ -162,11 +162,13 @@ main {
 .texto-info h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .texto-info p {
   font-size: 1.2em;
   line-height: 1.6;
+  padding-left: 30px;
 }
 
 /* Imagen */
