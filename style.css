@@ -117,34 +117,32 @@ main {
   color: #333;
 }
 
-/*media*/
-
-/* Para tablets (ancho menor a 900px) */
+/* Para tablets y pantallas medianas */
 @media (max-width: 900px) {
   nav {
     gap: 20px;
     padding: 10px;
     flex-wrap: wrap;
+    flex-direction: column; /* Menú vertical */
+    align-items: center;
   }
 
   .nav-item {
     font-size: 14px;
   }
-  
-
-  
 }
 
-/* Para celulares (ancho menor a 600px) */
-@media (max-width: 600px) {
+/* Para pantallas grandes */
+@media (min-width: 900px) {
   nav {
-    flex-direction: column;
+    flex-direction: row; /* Menú horizontal */
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 10px;
   }
 
   .nav-item {
-    flex-direction: row;
-    gap: 10px;
     font-size: 16px;
   }
 
@@ -152,37 +150,39 @@ main {
     font-size: 20px;
   }
 
-  .imagen-derecha {
-    padding-left: 100%;
+  .contenido-info {
+    flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+    justify-content: center;
+    text-align: left;
+  }
+
+  .texto-info {
+    max-width: 400px;
+  }
+
+  .imagen-derecha img {
+    max-width: 300px;
   }
 }
 
-/* Contenedor general */
+/* Estructura base */
 .contenido-info {
+  display: flex;
+  flex-direction: column; /* Texto arriba, imagen abajo */
+  align-items: center;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  gap: 20px;
 }
 
-/* Texto */
-.texto-info h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  text-align: center;
+.texto-info {
+  max-width: 90%;
 }
 
-.texto-info p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  padding-left: 30px;
-}
-
-/* Imagen */
 .imagen-derecha img {
-  padding-right: 25%;
-  max-width: 350px;
-  margin-top: 20px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*Botón*/
