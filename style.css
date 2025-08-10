@@ -198,3 +198,42 @@ main {
 .custom-navbar .nav-link:hover {
   color: #333 !important;
 }
+
+/* Imagen de fondo */
+.hero {
+  background-image: url("./images/fondo.jpg"); /* Cambia por tu ruta */
+  background-size: cover;       /* Que cubra todo el espacio */
+  background-position: center;  /* Centrar imagen */
+  background-repeat: no-repeat;
+  min-height: 80vh;              /* Alto mínimo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Capa oscura para mejor legibilidad */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenido sobre la capa */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Texto adaptable */
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
