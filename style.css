@@ -251,3 +251,8 @@ main {
   text-decoration: underline; /* Subrayado */
 }
 
+
+html, body {
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
