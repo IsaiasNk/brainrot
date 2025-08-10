@@ -237,3 +237,17 @@ main {
 .hero p {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
+
+/* Links de redes sociales */
+.social-link {
+  color: #000; /* Negro por defecto */
+  text-decoration: none; /* Sin subrayado inicial */
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ffcc00; /* Amarillo al pasar el mouse */
+  text-decoration: underline; /* Subrayado */
+}
+
