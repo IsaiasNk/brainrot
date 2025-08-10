@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #ddcd83;
+  background-color: #37b3ba;
   color: rgb(8, 5, 5);
 }
 
@@ -13,9 +13,9 @@ nav {
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: #cfcf41;
+  background-color: #3b8a93;
   padding: 20px 0;
-  box-shadow: 0 8px 20px rgba(229, 158, 27, 0.5);
+  box-shadow: 0 8px 20px rgba(26, 66, 82, 0.5);
   z-index: 1000;
 }
 
@@ -44,7 +44,7 @@ nav a {
 }
 
 .nav-item:hover i {
-  color: #b46a03;
+  color: #0a5355;
 }
 
 main {
@@ -90,7 +90,7 @@ main {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  background-color: rgb(216, 189, 54);
+  background-color: rgb(28, 158, 158);
   cursor: pointer;
 }
 
@@ -185,8 +185,8 @@ main {
 
 /* Colores y borde inferior */
 .custom-navbar {
-  background-color: #d5d54b; /* Amarillo */
-  border-bottom: 5px solid #e0be59; /* Borde dorado */
+  background-color: #69e6e8; /* Amarillo */
+  border-bottom: 5px solid #36e9e3; /* Borde dorado */
 }
 
 /* Texto negro */
